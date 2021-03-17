@@ -1,3 +1,4 @@
+//change to a more descriptive name function
 export default function shortenNameOnHyphen(name){
     //shorten the name of a prodcut on second shortenNameOnHyphen
     if(name.length < 20){
