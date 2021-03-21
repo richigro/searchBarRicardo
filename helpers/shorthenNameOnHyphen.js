@@ -1,13 +1,14 @@
 //change to a more descriptive name function
 export default function shortenNameOnHyphen(name){
     //shorten the name of a prodcut on second shortenNameOnHyphen
-    if(name.length < 20){
+    const maxAcceptableLength = 20;
+    if(name.length < maxAcceptableLength){
       return name;
     }
-    let hyphenCounter =0;
+    let hyphenCounter = 0;
     let currentChar;
     let index;
-    for(let i =0; i < name.length; i++){
+    for(let i = 0; i < name.length; i++){
       currentChar = name[i];
       if(currentChar === '-'){
         // add to the counnter
